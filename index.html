@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="https://res.cloudinary.com/dvi2paahl/image/upload/v1719118223/Group_h82tuy.png" alt="Logo" class="logo">
+        <h1 >The choice is yours<br>Because they don’t have one</h1>
+        <button class="quick-view" onclick="showQuickView('header-product')">QUICK VIEW</button>
+    </header>
+    <section class="about">
+        
+        <h2>About</h2>
+        <p>Our products are crafted exclusively from the dreams and screams of young kids who wanted to show their mastery in their chosen fields, but were directed towards a factory for daily wages. Each cracker bursts brighter than their lost smiles, and can be heard louder than their cries for miles. Buy them, burst them, brag about them.</p>
+        <p class="choice-header">The choice is yours. Because they don’t have one.</p>
+    </section>
+    <section class="products">
+        <h2>Our products</h2>
+        <div class="product-card" onclick="showQuickView('product1')">
+            <img src="https://res.cloudinary.com/dvi2paahl/image/upload/v1719119327/Frame_7_gwk0lw.png" alt="Raju Rassibomb">
+            <div class="product-bottom">
+                <h3>Raju Rassibomb</h3>
+                <button class="quick-view">QUICK VIEW</button>
+            </div>
+        </div>
+        <div class="product-card" onclick="showQuickView('product2')">
+            <img src="https://res.cloudinary.com/dvi2paahl/image/upload/v1719119327/Frame_7_gwk0lw.png" alt="Ladiyon ki Rani Chani">
+            <div class="product-bottom">
+                <h3>Ladiyon ki Rani Chani</h3>
+                <button class="quick-view">QUICK VIEW</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img  class = "footer-img-1" src="https://res.cloudinary.com/dvi2paahl/image/upload/v1719127636/Frame_65_gcyjv4.png"/ >
+            <div>
+                <h3>Follow us on</h3>
+            <div class="social-icons">
+                <i class="fab fa-google icon"></i>
+                <i class="fab fa-twitter icon"></i>
+                <i class="fab fa-instagram icon"></i>
+                <i class="fab fa-facebook icon"></i>
+                <i class="fab fa-linkedin icon"></i>
+        </div>
+
+            </div>
+            <img  class = "footer-img-1" src="https://res.cloudinary.com/dvi2paahl/image/upload/v1719127636/Frame_65_gcyjv4.png"/ >
+        </div>
+    </footer>
+
+    <div id="quick-view-modal" class="modal">
+        <div class="modal-content">
+            
+            <img id="modal-image" src="" alt="Product Image">
+            <div>
+                <span class="close" onclick="closeQuickView()">&times;</span>
+                <h2 id="modal-title">Product Title</h2>
+                <p id="modal-description">Product description goes here.</p>
+                <p id ="modal-content"> Product Content</p>
+                <button id="modal-button">Choose Now</button>
+            </div>            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
